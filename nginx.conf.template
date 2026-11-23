@@ -171,7 +171,7 @@ server {
 
     # 性能优化：关闭访问日志，只记录错误
     access_log off;
-    error_log /dev/stderr warn;
+    error_log stderr warn;
 
     # 禁止特定请求方法
     if ($request_method !~ ^(GET|HEAD|POST|PUT|DELETE|OPTIONS|PROPFIND|MKCOL)$) {
